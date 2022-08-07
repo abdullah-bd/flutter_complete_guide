@@ -12,10 +12,10 @@ class MyApp extends StatefulWidget {
   }
 }
 
-class _MyAppState extends State<MyApp>{
-
+class _MyAppState extends State<MyApp> {
   var _questionIndex = 0;
-  void _answerQuestion(){
+
+  void _answerQuestion() {
     setState(() {
       _questionIndex++;
     });
@@ -48,7 +48,7 @@ class _MyAppState extends State<MyApp>{
             ),
             RaisedButton(
               child: Text("Answer 3"),
-              onPressed: (){
+              onPressed: () {
                 print("Answer 3 chosen!");
               },
             ),
